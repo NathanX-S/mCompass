@@ -491,7 +491,7 @@ if CLIENT then
 		local ply = LocalPlayer()
 		if mCompass_Settings.Compass_Enabled and cl_cvar_mcompass_enabled then
 
-			local ang = ply:GetAngles()
+			local ang = ply:EyeAngles()
 			local compassX, compassY = ScrW() * compass_style.compassX, ScrH() * compass_style.compassY
 			local width, height = ScrW() * compass_style.width, ScrH() * compass_style.height
 			local cl_spacing = compass_style.spacing
